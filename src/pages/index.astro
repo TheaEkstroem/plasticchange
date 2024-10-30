@@ -17,195 +17,207 @@ import TopTi from "../components/TopTi.astro";
 ---
 
 <MainLayout title="Singleusesucks">
-  
-    <!-- Hero -->
-    <section
-      style="background-image: url(/src/assets/images/ocean1.webp)"
-      class="flex items-center h-screen w-100 bg-cover bg-center sticky top-0"
-    >
-      <div class="flex flex-col items-center justify-center mx-auto">
-        <h1 text-lg>Det er sejt at bruge plastik flere gange</h1>
-        <h2>#SingleUseSucks</h2>
-        <Link variant="primary" size="large">Støt</Link>
-      </div>
-    </section>
-
-    <!-- Hvad er plastikforurening -->
-    <section
-      id="hvad-er-plastikforurening"
-      style="background-color: #F7F7F7"
-      class="flex items-center h-screen w-100 bg-cover bg-center sticky "
-    >
-      <Plastikforurening />
-    </section>
-
-    <!-- Procent infografik med plastikforurening -->
-    <section
-      id=""
-      style="background-image: url(/src/assets/images/ocean2.webp)"
-      class="flex items-center h-screen w-100 bg-cover bg-center sticky top-0"
-    >
-      <div class="bg-[#014E82]/70 rounded-lg p-14 mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-          <div class="flex flex-col items-center">
-            <img
-              src="../public/flaske.svg"
-              alt="flaske"
-              class="w-32 h-32 mb-2"
-            />
-            <p>Plastikflasker</p>
-          </div>
-          <div class="flex flex-col items-center">
-            <img
-              src="../public/Beholder.svg"
-              alt="flaske"
-              class="w-32 h-32 mb-2"
-            />
-            <p>Plastikbeholder</p>
-          </div>
-          <div class="flex flex-col items-center">
-            <img src="../public/Pose.svg" alt="flaske" class="w-32 h-32 mb-2" />
-            <p>Plastikposer</p>
-          </div>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mt-10">
-          <div class="flex flex-col items-center">
-            <img
-              src="../public/Sugerør.svg"
-              alt="sugerør"
-              class="w-32 h-32 mb-2"
-            />
-            <p>Plastiksugerør</p>
-          </div>
-          <div class="flex flex-col items-center">
-            <h2 class="text-9xl text-center">80%</h2>
-          </div>
-          <div class="flex flex-col items-center">
-            <img
-              src="../public/Chipspose.svg"
-              alt="chipspose"
-              class="w-52 h-32 mb-2"
-            />
-            <p>Plastikemballage</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Problemet med plastikforurening -->
-    <section
-      id="Problemet-med-plastikforurening"
-      style="background-color: #F7F7F7"
-      class="flex items-center h-screen w-100 bg-cover bg-center sticky top-0"
-    >
-      <ProblemPlastik />
-    </section>
-
-    <!-- datavisual + info -->
-    <section
-      id=""
-      style="background-image: url(/src/assets/images/ocean2.webp)"
-      class="grid items-center h-[200vh] w-100 bg-cover bg-center sticky"
-    >
-      <!-- Datavisualisering  -->
-
-      <Datavisualisering />
-
-      <TopTi />
-
-      <!-- Top ti infografik  -->
-    </section>
-
-    <!-- infografik, goderåd -->
-    <div class="overflow-clip ">
-      <section id="horisontalscrollsection1" style="background-color: #6D9DA8" class="h-[200vh] w-100 bg-cover bg-center sticky top-0">
-        <h2 class="sticky top-28">Hvad er stock-fotos?</h2>
-        <div id="horisontalliste1" class="flex sticky top-[40vh] space-x-10 p-2" >
-          <div class=" flex-none w-[650px] flex flex-row gap-4  items-center space-x-4">
-            <div>
-              <h3>Dit indkøb</h3>
-              <h4>Tag en mulepose med, og sig nej tak til plastik poser</h4>
-            </div>
-            <img
-              src="../public/Pose.svg"
-              alt="Plastikpose"
-              class="w-32 h-32 mb-2"
-            />  
-          </div>
-          <!--  -->
-          <div class="flex-none w-[650px] flex flex-row gap-4  items-center space-y-4">
-            <div>
-              <h3>Din vandflaske</h3>
-              <h4>Brug drikkedunk og undgå købevand</h4>
-            </div>
-            <img
-              src="../public/flaske.svg"
-              alt="flaske"
-              class="w-32 h-32 mb-2"
-            />
-           </div> 
-           <!--  -->
-          <div class="flex-none w-[650px] flex flex-row gap-4 items-center space-y-4">
-            <div>
-              <h3>Din tøjvask</h3>
-              <h4>Fyld din vaskemaskine, når du skal vaske tøj</h4>
-            </div>
-            <img
-              src="../public/Beholder.svg"
-              alt="Plastbeholder"
-              class="w-32 h-32 mb-2"
-            />
-           </div>
-           <!-- -->
-           <div class="flex-none w-[650px] flex flex-row gap-4 items-center space-y-4">
-            <div>
-              <h3>Din fest</h3>
-              <h4>Drop engangsservice, balloner og sugerør</h4>
-            </div>
-            <img
-              src="../public/Sugerør.svg"
-              alt="sugerør"
-              class="w-32 h-32 mb-2"
-            />
-           </div>
-        </div>
-      </section>
+  <!-- Hero -->
+  <section
+    style="background-image: url(/src/assets/images/ocean1.webp)"
+    class="flex items-center h-screen w-100 bg-cover bg-center sticky top-0"
+  >
+    <div class="flex flex-col items-center justify-center mx-auto">
+      <h1 text-lg>Det er sejt at bruge plastik flere gange</h1>
+      <h2>#SingleUseSucks</h2>
+      <Link variant="primary" size="large">Støt</Link>
     </div>
-
-
-  <!-- statement  -->
-  <section id="" style="background-color: #F7F7F7" class="h-[100vh] w-100 bg-cover bg-center sticky ">
-  <Statement />
   </section>
 
+  <!-- Hvad er plastikforurening -->
+  <section
+    id="hvad-er-plastikforurening"
+    style="background-color: #F7F7F7"
+    class="flex items-center h-screen w-100 bg-cover bg-center sticky"
+  >
+    <Plastikforurening />
+  </section>
 
+  <!-- Procent infografik med plastikforurening -->
+  <section
+    id=""
+    style="background-image: url(/src/assets/images/ocean2.webp)"
+    class="flex items-center h-screen w-100 bg-cover bg-center sticky top-0"
+  >
+    <div class="bg-[#014E82]/70 rounded-lg p-14 mx-auto">
+      <h2 class="text-5xl text-center pb-14">
+        Hvor meget skrald i havet der er plastik
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div class="flex flex-col items-center">
+          <img src="../public/flaske.svg" alt="flaske" class="w-32 h-32 mb-2" />
+          <p>Plastikflasker</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <img
+            src="../public/Beholder.svg"
+            alt="flaske"
+            class="w-32 h-32 mb-2"
+          />
+          <p>Plastikbeholder</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="../public/Pose.svg" alt="flaske" class="w-32 h-32 mb-2" />
+          <p>Plastikposer</p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mt-10">
+        <div class="flex flex-col items-center">
+          <img
+            src="../public/Sugerør.svg"
+            alt="sugerør"
+            class="w-32 h-32 mb-2"
+          />
+          <p>Plastiksugerør</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <h2 class="text-9xl text-center">80%</h2>
+          <h3 class="text-3
+          2xl text-center">
+            Plastik kommer fra landbaserede kilder
+          </h3>
+        </div>
+        <div class="flex flex-col items-center">
+          <img
+            src="../public/Chipspose.svg"
+            alt="chipspose"
+            class="w-52 h-32 mb-2"
+          />
+          <p>Plastikemballage</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problemet med plastikforurening -->
+  <section
+    id="Problemet-med-plastikforurening"
+    style="background-color: #F7F7F7"
+    class="flex items-center h-screen w-100 bg-cover bg-center sticky top-0"
+  >
+    <ProblemPlastik />
+  </section>
+
+  <!-- datavisual + info -->
+  <section
+    id=""
+    style="background-image: url(/src/assets/images/ocean2.webp)"
+    class="grid items-center h-[200vh] w-100 bg-cover bg-center sticky"
+  >
+    <!-- Datavisualisering  -->
+
+    <Datavisualisering />
+
+    <TopTi />
+
+    <!-- Top ti infografik  -->
+  </section>
+
+  <!-- infografik, goderåd -->
+  <div class="overflow-clip">
+    <section
+      id="horisontalscrollsection1"
+      style="background-color: #6D9DA8"
+      class="h-[200vh] w-100 bg-cover bg-center sticky top-0"
+    >
+      <h2 class="sticky top-28">Hvad er stock-fotos?</h2>
+      <div id="horisontalliste1" class="flex sticky top-[40vh] space-x-10 p-2">
+        <div
+          class="flex-none w-[650px] flex flex-row gap-4 items-center space-x-4"
+        >
+          <div>
+            <h3>Dit indkøb</h3>
+            <h4>Tag en mulepose med, og sig nej tak til plastik poser</h4>
+          </div>
+          <img
+            src="../public/Pose.svg"
+            alt="Plastikpose"
+            class="w-32 h-32 mb-2"
+          />
+        </div>
+        <!--  -->
+        <div
+          class="flex-none w-[650px] flex flex-row gap-4 items-center space-y-4"
+        >
+          <div>
+            <h3>Din vandflaske</h3>
+            <h4>Brug drikkedunk og undgå købevand</h4>
+          </div>
+          <img src="../public/flaske.svg" alt="flaske" class="w-32 h-32 mb-2" />
+        </div>
+        <!--  -->
+        <div
+          class="flex-none w-[650px] flex flex-row gap-4 items-center space-y-4"
+        >
+          <div>
+            <h3>Din tøjvask</h3>
+            <h4>Fyld din vaskemaskine, når du skal vaske tøj</h4>
+          </div>
+          <img
+            src="../public/Beholder.svg"
+            alt="Plastbeholder"
+            class="w-32 h-32 mb-2"
+          />
+        </div>
+        <!-- -->
+        <div
+          class="flex-none w-[650px] flex flex-row gap-4 items-center space-y-4"
+        >
+          <div>
+            <h3>Din fest</h3>
+            <h4>Drop engangsservice, balloner og sugerør</h4>
+          </div>
+          <img
+            src="../public/Sugerør.svg"
+            alt="sugerør"
+            class="w-32 h-32 mb-2"
+          />
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- statement  -->
+  <section
+    id=""
+    style="background-color: #F7F7F7"
+    class="h-[100vh] w-100 bg-cover bg-center sticky"
+  >
+    <Statement />
+  </section>
 
   <!-- Donér  -->
-  <section id="" style="background-image: url(/src/assets/images/ocean1.webp)"
-  class="flex items-center h-screen w-100 bg-cover bg-center sticky  mx-auto"
->
+  <section
+    id=""
+    style="background-image: url(/src/assets/images/ocean1.webp)"
+    class="flex items-center h-screen w-100 bg-cover bg-center sticky mx-auto"
+  >
     <Doner />
-    </section>
-
+  </section>
 
   <!-- TIlmeld  -->
-  <section id="" style="background-color: #F7F7F7" class="h-[100vh] w-100 bg-cover bg-center sticky top-0 ">
+  <section
+    id=""
+    style="background-color: #F7F7F7"
+    class="h-[100vh] w-100 bg-cover bg-center sticky top-0"
+  >
     <Nyhedsbrev />
-    </section>
-
-
+  </section>
 </MainLayout>
 
 <script>
-import { scroll, animate, inView } from "@motionone/dom";
+  import { scroll, animate, inView } from "@motionone/dom";
 
   scroll(
-	animate("#horisontalliste1", {
-		transform: ["none", "translateX(-80vw)"]
-	}),
-	{ target: document.querySelector("#horisontalscrollsection1") }
-	); 
-
-
+    animate("#horisontalliste1", {
+      transform: ["none", "translateX(-80vw)"],
+    }),
+    { target: document.querySelector("#horisontalscrollsection1") }
+  );
 </script>
