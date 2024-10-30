@@ -16,7 +16,7 @@
       <div class="flex flex-col items-center">
         <img
           class="h-auto max-w-12 pb-6"
-          src="../public/Cigaretter.svg"
+          src="/Cigaretter.svg"
           alt="Cigaretter"
         />
         <h5 class="">1. Cigaretskodder</h5>
@@ -30,11 +30,7 @@
       </div>
 
       <div class="flex flex-col items-center mt-6">
-        <img
-          class="h-auto max-w-20 pb-6"
-          src="../public/flaske.svg"
-          alt="flaske"
-        />
+        <img class="h-auto max-w-20 pb-6" src="/flaske.svg" alt="flaske" />
         <h5 class="">3. Plastikflasker</h5>
         <p class="text-3xl">1,569,135</p>
       </div>
@@ -42,7 +38,7 @@
       <div class="flex flex-col items-center mt-10">
         <img
           class="h-auto max-w-16 pb-6"
-          src="../public/Plastikpropper.svg"
+          src="/Plastikpropper.svg"
           alt="propper"
         />
         <h5 class="">4. Plastikpropper</h5>
@@ -50,7 +46,7 @@
       </div>
 
       <div class="flex flex-col items-center">
-        <img class="h-auto max-w-16 pb-6" src="../public/Pose.svg" alt="Pose" />
+        <img class="h-auto max-w-16 pb-6" src="/Pose.svg" alt="Pose" />
         <h5 class="">5. Plastik indkøbsposer</h5>
         <p class="text-3xl">757,523</p>
       </div>
@@ -58,7 +54,7 @@
       <div class="flex flex-col items-center mt-10">
         <img
           class="h-auto max-w-16 pb-6"
-          src="../public/Chipspose.svg"
+          src="/Chipspose.svg"
           alt="Plastikpose"
         />
         <h5 class="">6. Andre plastikposer</h5>
@@ -66,11 +62,7 @@
       </div>
 
       <div class="flex flex-col items-center -top-4">
-        <img
-          class="h-auto max-w-16 pb-6"
-          src="../public/Sugerør.svg"
-          alt="Sugerør"
-        />
+        <img class="h-auto max-w-16 pb-6" src="/Sugerør.svg" alt="Sugerør" />
         <h5 class="">7. Sugerør</h5>
         <p class="text-3xl">643,562</p>
       </div>
@@ -78,7 +70,7 @@
       <div class="flex flex-col items-center mt-16">
         <img
           class="h-auto max-w-16 pb-6"
-          src="../public/BeholdeTA.svg"
+          src="/BeholdeTA.svg"
           alt="TABeholder"
         />
         <h5 class="">8. Plastik take away beholder</h5>
@@ -86,17 +78,13 @@
       </div>
 
       <div class="flex flex-col items-center mt-16">
-        <img class="h-auto max-w-16 pb-6" src="../public/Lids.svg" alt="Låg" />
+        <img class="h-auto max-w-16 pb-6" src="/Lids.svg" alt="Låg" />
         <h5 class="">9. Plastiklåg</h5>
         <p class="text-3xl">624,878</p>
       </div>
 
       <div class="flex flex-col items-center mt-10">
-        <img
-          class="h-auto max-w-16 pb-6"
-          src="../public/TakeAway.svg"
-          alt="TakeAway"
-        />
+        <img class="h-auto max-w-16 pb-6" src="/TakeAway.svg" alt="TakeAway" />
         <h5 class="">10. Skum take away beholdere</h5>
         <p class="text-3xl">580,570</p>
       </div>
@@ -104,25 +92,24 @@
   </div>
 </section>
 
-  <script>
-    import { inView, animate, stagger } from "@motionone/dom";
+<script>
+  import { inView, animate, stagger } from "@motionone/dom";
 
-    inView("#stagger2 .flex", () => {
-      animate(
-        ".staggeranimation2 .flex",
-        { opacity: [0, 1] },
-        {
-          delay: stagger(0.3, { start: 0.1 }),
-        }
-      );
-    });
-  </script>
+  inView("#stagger2 .flex", () => {
+    animate(
+      ".staggeranimation2 .flex",
+      { opacity: [0, 1] },
+      {
+        delay: stagger(0.3, { start: 0.1 }),
+      }
+    );
+  });
+</script>
 
 <style>
-
-
-  p, h2, h3{
-    color:white
-
+  p,
+  h2,
+  h3 {
+    color: white;
   }
 </style>
