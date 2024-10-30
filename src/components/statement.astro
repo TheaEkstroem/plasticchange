@@ -1,0 +1,65 @@
+---
+import { Image } from "astro:assets";
+import plastikpose from "../assets/images/plastikpose.webp";
+import skildpade from "../assets/images/skildpade.webp";
+---
+
+<section class="parallaxgrafikstatement fullwidthsection">
+  <div class="w-full grid grid-cols-9 overflow-hidden h-screen">
+    <Image
+      src={plastikpose}
+      alt="plastikpose"
+      class="col-start-5 col-span-2 parallaxgrafikstatement1"
+    />
+
+    <Image
+      src={skildpade}
+      alt="skildpade"
+      class="col-start-5 col-span-2 parallaxgrafikstatement1"
+    />
+
+    <Image
+      src={skildpade}
+      alt="skildpade"
+      class="col-start-5 col-span-2 parallaxgrafikstatement2"
+    />
+    <Image
+      src={plastikpose}
+      alt="plastikpose"
+      class="col-start-5 col-span-3 parallaxgrafikstatement2"
+    />
+
+    <Image
+      src={plastikpose}
+      alt="plastikpose"
+      class="col-start-3 col-span-4 parallaxgrafikstatement3"
+    />
+  </div>
+</section>
+<script>
+  /* Import af Motion One biblioteket */
+  import { scroll, animate } from "@motionone/dom";
+
+  /* Parallaxgrafik */
+  scroll(
+    animate(".parallaxgrafikstatement1", { x: [-200, 1000], y: [-200, 100] }),
+    {
+      target: document.querySelector(".parallaxgrafikstatement"),
+      offset: ["start end", "end start"],
+    }
+  );
+  scroll(
+    animate(".parallaxgrafikstatement2", { x: [-1000, 400], y: [-2000, 100] }),
+    {
+      target: document.querySelector(".parallaxgrafikstatement"),
+      offset: ["start end", "end start"],
+    }
+  );
+  scroll(
+    animate(".parallaxgrafikstatement3", { x: [-1000, 200], y: [-4000, 100] }),
+    {
+      target: document.querySelector(".parallaxgrafikstatement"),
+      offset: ["start end", "end start"],
+    }
+  );
+</script>

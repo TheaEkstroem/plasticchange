@@ -1,0 +1,115 @@
+---
+---
+
+<div class="overflow-clip  h-[550px] p-12 sticky">
+    <section id="horisontalscrollsection" class="h-[500px] ">
+        <div class="sticky top-0 p-9 ">
+            <h2>Hvad kan du selv gøre</h2>
+            <h3>4 gode råd du kan implementere i din hverdag</h3>
+        </div>
+        <ul id="horisontalliste" class="list-none pl-0 flex sticky top-[10vh]">
+        <li class="råd p-9  flex-none w-[850px] flex flex-row gap-4 items-center">
+            <div>
+                <h3>Dit indkøb</h3>
+                <h4>Tag en mulepose med, og sig nej tak til plastik poser</h4>
+            </div>
+            <img src="../public/Pose.svg" alt="Plastikpose" class="w-32 h-32 mb-2" />
+        </li>
+        <li class="råd p-9  flex-none w-[850px] flex flex-row gap-4 items-center">
+            <div>
+                <h3>Din vandflaske</h3>
+                <h4>Brug drikkedunk og undgå købevand</h4>
+            </div>
+            <img src="../public/flaske.svg" alt="flaske" class="w-32 h-32 mb-2" />
+        </li>
+        <li class="råd p-9 flex-none w-[850px] flex flex-row gap-4 items-center">
+            <div>
+                <h3>Din tøjvask</h3>
+                <h4>Fyld din vaskemaskine, når du skal vaske tøj</h4>
+            </div>
+            <img src="../public/Beholder.svg" alt="Plastbeholder" class="w-32 h-32 mb-2" />
+        </li>
+        <li class="råd p-9 flex-none w-[850px] flex flex-row gap-4 items-center">
+            <div>
+                <h3>Din fest</h3>
+                <h4>Drop engangsservice, balloner og sugerør</h4>
+            </div>
+            <img src="../public/Sugerør.svg" alt="sugerør" class="w-32 h-32 mb-2" />
+        </li> </ul>
+    </section>
+</div>
+
+<script>
+    import { scroll, animate, inView } from "@motionone/dom";
+
+
+scroll(
+	animate("#horisontalliste", {
+		transform: ["translateX(-2450px)", "none"]
+	}),
+	{ target: document.querySelector("#horisontalscrollsection") }
+	); 
+</script>
+
+
+
+<!-- virker halvt
+
+        <li class="pl-0 flex w-[100vw] items-start justify-center flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto">Hej</li>
+
+
+<div class="overflow-clip p-10">
+    <section id="horisontalscrollsection1" class="h-[491px] ">
+        <div class="sticky top-0 ">
+            <h2>Hvad kan du selv gøre</h2>
+            <h3>4 gode råd du kan implementere i din hverdag</h3>
+        </div>
+
+        <ul id="horisontalliste1" class="gode flex sticky space-x-8 py-6">
+            <li class="råd p-6 flex-none w-[550px] flex flex-row gap-4 items-center">
+                <div>
+                    <h3>Dit indkøb</h3>
+                    <h4>Tag en mulepose med, og sig nej tak til plastik poser</h4>
+                </div>
+                <img src="../public/Pose.svg" alt="Plastikpose" class="w-32 h-32 mb-2" />
+            </li>
+            <li class="råd p-6 flex-none w-[550px] flex flex-row gap-4 items-center">
+                <div>
+                    <h3>Din vandflaske</h3>
+                    <h4>Brug drikkedunk og undgå købevand</h4>
+                </div>
+                <img src="../public/flaske.svg" alt="flaske" class="w-32 h-32 mb-2" />
+            </li>
+            <li class="råd p-6 flex-none w-[550px] flex flex-row gap-4 items-center">
+                <div>
+                    <h3>Din tøjvask</h3>
+                    <h4>Fyld din vaskemaskine, når du skal vaske tøj</h4>
+                </div>
+                <img src="../public/Beholder.svg" alt="Plastbeholder" class="w-32 h-32 mb-2" />
+            </li>
+            <li class="råd p-6 flex-none w-[550px] flex flex-row gap-4 items-center">
+                <div>
+                    <h3>Din fest</h3>
+                    <h4>Drop engangsservice, balloner og sugerør</h4>
+                </div>
+                <img src="../public/Sugerør.svg" alt="sugerør" class="w-32 h-32 mb-2" />
+            </li>
+        </ul>
+    </section>
+</div>
+
+<script>
+    import { scroll, animate, inView } from "@motionone/dom";
+
+    // Select all items to be animated
+    const items = document.querySelectorAll(".råd");
+
+     scroll(
+  animate(".gode", {
+    transform:  ["translateX(-100vw)", "translatex(0vw)"] 
+
+  }),
+  { target: document.querySelector(".råd") }
+);
+</script> 
+ -->

@@ -1,0 +1,80 @@
+---
+import { Image } from "astro:assets";
+import fisk1 from "../assets/images/fisk1.webp";
+import fisk2 from "../assets/images/fisk2.webp";
+import grønflaske from "../assets/images/grønflaske.webp";
+import plastikpose from "../assets/images/plastikpose.webp";
+import skildpade from "../assets/images/skildpade.webp";
+
+---
+<!-- alt med sm: og lg: er responsivt kan evt ændres for at ændre på længden af vores site -->
+
+<section class="parallaxgrafik fullwidthsection relative ">
+    <!-- Parallax background and animated images -->
+    <div
+      class="mt-2 lg:h-screen w-full bg-cover bg-center grid grid-cols-10 grid-flow-col overflow-hidden "
+    >
+      <Image src={plastikpose} alt="plastikpose" class="col-start-6 col-span-2 parallaxgrafik2" />
+      <Image src={fisk2} alt="fisk" class="col-start-8 col-span-1 parallaxgrafik3" />
+      <Image src={fisk1} alt="fisk" class="col-start-1 col-span-2 parallaxgrafik4" />
+ <Image src={plastikpose} alt="plastikpose" class="col-start-5 col-span-1 parallaxgrafik6" />
+      <Image src={skildpade} alt="skildpade" class="col-start-4 col-span-2 parallaxgrafik7" />
+    
+    </div>
+  
+    <!-- Overlay Text Content -->
+    <div class="ml-10 absolute inset-0 flex flex-col text-left">
+      <h3 class="mb-4">Hvad er plastikforurening</h3>
+      <div class="prose">
+      <p class="max-w-lg  ">
+        Plastikforurening er ophobning af plastik i naturen, hvor det ikke nedbrydes naturligt. Det findes især i havet,
+        hvor det skader dyr, der forveksler det med mad eller vikles ind i det. Over tid nedbrydes plastik til mikroplast,
+        små stykker under 5 mm, som spreder farlige kemikalier.
+      </p>
+      <p class="max-w-lg  "> Disse kemikalier kan skade både dyr og mennesker, når de kommer ind i fødekæden gennem f.eks. fisk og skaldyr.
+        Plastikforurening påvirker også miljøet ved at blokere vandløb og forringe landskaber, både på land og i vand.</p>
+      </div>
+      </div>
+  </section>
+
+<script>
+    	import { scroll,animate } from "@motionone/dom";
+
+        /* 1 */
+
+	scroll(animate(".parallaxgrafik2", {  x: [-1500, 2000], y: [200, 0] }), {
+		target: document.querySelector(".parallaxgrafik"), offset: ["start end", "end start"]
+	});
+	scroll(animate(".parallaxgrafik3", { x: [-1500, 2000], y: [150, 0] }), {
+		target: document.querySelector(".parallaxgrafik"), offset: ["start end", "end start"]
+	});
+
+/* 2 */
+
+scroll(animate(".parallaxgrafik4", {  x: [2000, -1700], y: [100, 0] }), {
+		target: document.querySelector(".parallaxgrafik"), offset: ["start end", "end start"]
+	});
+
+	scroll(animate(".parallaxgrafik6", { x: [1600, -1800], y: [150, 0] }), {
+		target: document.querySelector(".parallaxgrafik"), offset: ["start end", "end start"]
+	});
+    scroll(animate(".parallaxgrafik7", { x: [1800, -800], y: [150, 0] }), {
+		target: document.querySelector(".parallaxgrafik"), offset: ["start end", "end start"]
+	});
+
+
+</script>
+  <!--       <Image src={grønflaske} alt="grønflaske" class="col-start-1 col-span-2 parallaxgrafik5" />
+
+	scroll(animate(".parallaxgrafik5", {  x: [1900, -1800], y: [100, 0] }), {
+		target: document.querySelector(".parallaxgrafik"), offset: ["start end", "end start"]
+	});
+
+
+             <Image src={grønflaske} alt="grønflaske" class="col-start-3 col-span-1  parallaxgrafik1" />
+
+                 scroll(animate(".parallaxgrafik1", {  x: [-1500, 2000], y: [100, 0] }), {
+		target: document.querySelector(".parallaxgrafik"), offset: ["start end", "end start"]
+	});
+
+ -->     

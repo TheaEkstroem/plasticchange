@@ -1,0 +1,159 @@
+---
+import Button from "../components/Link.astro";
+import { Image } from "astro:assets";
+import fisk1 from "../assets/images/fisk1.webp";
+import fisk2 from "../assets/images/fisk2.webp";
+import grønflaske from "../assets/images/grønflaske.webp";
+import plastikpose from "../assets/images/plastikpose.webp";
+import skildpade from "../assets/images/skildpade.webp";
+---
+<section class="parallaxgrafik fullwidthsection relative z-0 mx-auto ">
+
+  <!-- Parallax background and animated images -->
+  <div
+    class=" z-0  w-full grid grid-cols-12 grid-flow-col absolute inset-0 "
+  >
+    <Image src={plastikpose} alt="plastikpose" class="col-start-9 col-span-2 opacity-30" />
+    <Image src={fisk2} alt="fisk" class="col-start-1 col-span-2 opacity-20 " />
+    <Image src={fisk1} alt="fisk" class="col-start-12 col-span-2 opacity-40 " />
+    <Image src={plastikpose} alt="plastikpose" class="col-start-7 col-span-2 opacity-20" />
+    <Image src={skildpade} alt="skildpade" class="col-start-6 col-span-2 opacity-50 " />
+  </div>
+
+<section class="z-10 relative  pb-20 pt-20  ">
+<div class="grid lg:grid-flow-col gap-9 ">
+  <div>
+    <h3 class="">Støt kampen mod engangsplastik </h3>
+    <h4>Sammen kan vi skabe en renere planet!</h4>
+    <p class="max-w-xl text-pretty pt-10">
+      Med din støtte kan vi kæmpe for, at politikere og virksomheder tager
+      ansvar for at standse overproduktion og forurening fra plastik nu og at vi
+      kan uddanne fremtidens forbrugere.
+    </p>
+    <p class="max-w-xl text-pretty pt-5">
+      Du bliver en del af en global Plastic Changer bevægelse, der siger: STOP
+      PLASTIKFORURENING NU!
+    </p>
+  </div>
+
+<!-- form --> 
+<div class="bg-[#BBD0E4] p-7 rounded-lg ">
+    <form class=" " action="" data-netlify="true">
+      <!-- Donationsperiode -->
+      <div class="pb-9 ">
+        <p>Donations periode</p>
+        <div class="flex gap-10">
+          <div class="flex items-center gap-x-3">
+            <input
+              id="engangs"
+              name="periode"
+              type="radio"
+              class="h-5 w-5  border-none text-[#001D3D] focus:outline-none focus:ring-0 focus:ring-[#ffffff]"
+            />
+            <label for="engangs" class="block text-md leading-6 "
+              >Engangs betaling</label
+            >
+          </div>
+  
+          <div class="flex items-center gap-x-3">
+            <input
+              id="måned"
+              name="periode"
+              type="radio"
+              class="h-5 w-5  border-none text-[#001D3D] focus:outline-none focus:ring-0 focus:ring-[#ffffff]"
+            />
+            <label for="måned" class="block text-md leading-6 "
+              >Månedligt</label
+            >
+          </div>
+        </div>
+      </div>
+
+        <!-- udvalgt beløb -->
+        <div class="pb-9 ">
+            <p>Hurtig donation (kr.)</p>
+            <div class="flex gap-8">
+              <div class="flex items-center gap-x-3">
+                <input
+                  id="donation50"
+                  name="beløb"
+                  type="radio"
+                  class="h-12 w-12  border-none text-[#001D3D] focus:outline-none focus:ring-0 focus:ring-[#ffffff]"
+                />
+                <label for="donation50" class="block text-md leading-6 "
+                  >50</label
+                >
+              </div>
+      
+              <div class="flex items-center gap-x-3 ">
+                <input
+                  id="donation75"
+                  name="beløb"
+                  type="radio"
+                  class="h-12 w-12  border-none text-[#001D3D] focus:outline-none focus:ring-0 focus:ring-[#ffffff]"
+                />
+                <label for="donation75" class="block text-md leading-6 "
+                  >75</label
+                >
+              </div>
+
+              <div class="flex items-center gap-x-3">
+                <input
+                  id="donation100"
+                  name="beløb"
+                  type="radio"
+                  class="h-12 w-12  border-none text-[#001D3D] focus:outline-none focus:ring-0 focus:ring-[#ffffff]"
+                />
+                <label for="donation100" class="block text-md leading-6 "
+                  >100</label
+                >
+              </div>
+
+            </div>
+          </div>
+  
+    
+  
+      <!-- Selvvalgt Beløb -->
+      <div class="pb-9">
+          <p>Selvvalgt beløb (kr.)</p>
+          <div class="mt-2">
+            <input type="text" name="selvvalgt-beløb" placeholder="Selvvalgt beløb" id="first-name" autocomplete="given-name"   class="w-full lg:w-[350px] text-[#001D3D] placeholder-gray-400 px-4 py-3 rounded-lg focus:outline-none focus:ring-0 focus:ring-white">
+          </div>
+  
+      <!--  støt knap  -->
+      <div class="transition pt-9">
+        <Button type="submit" variant="primary" size="medium"> Indsend</Button>
+      </div>
+    </form>
+  
+
+
+  </div>
+</section>
+
+</section>
+
+
+<style>
+
+  input{
+    
+    background-color: #e7e7e7;
+  }
+</style>
+
+
+<!-- 
+  <div
+    class=" z-0  w-full grid grid-cols-12 grid-flow-col absolute inset-0 "
+  >
+    <Image src={grønflaske} alt="grønflaske" class="col-start-8 col-span-1 opacity-50  " />
+    <Image src={plastikpose} alt="plastikpose" class="col-start-9 col-span-2 opacity-30" />
+    <Image src={fisk2} alt="fisk" class="col-start-1 col-span-2 opacity-20 " />
+    <Image src={fisk1} alt="fisk" class="col-start-12 col-span-2 opacity-40 " />
+    <Image src={grønflaske} alt="grønflaske" class="col-start-9 col-span-3 opacity-30 " />
+    <Image src={plastikpose} alt="plastikpose" class="col-start-7 col-span-1 opacity-20" />
+    <Image src={skildpade} alt="skildpade" class="col-start-6 col-span-2 opacity-50 " />
+  </div>
+ -->

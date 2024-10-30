@@ -1,0 +1,38 @@
+---
+import Link from "../components/Link.astro";
+import Button from "../components/Button.astro";
+
+import { Image } from "astro:assets";
+import fisk1 from "../assets/images/fisk1.webp";
+import fisk2 from "../assets/images/fisk2.webp";
+import grønflaske from "../assets/images/grønflaske.webp";
+import plastikpose from "../assets/images/plastikpose.webp";
+import skildpade from "../assets/images/skildpade.webp";
+
+---
+
+
+<section class="grid justify-center gap-40">
+  <h2>Vores verden kan ikke holde til mere unødvendig plastik.</h2>
+
+  <div class="grid justify-center gap-8">
+    <h4>Hold dig opdateret på udviklingen via vores nyhedsbrev</h4>
+   
+    <div class="grid justify-center">
+    <form class="flex gap-2 " action="">
+      <input
+        class="rounded-lg border-none"
+        type="email"
+        placeholder="SingleUse@jatak.com"
+        id="fname"
+        name="fname"
+      /><br />
+      <!-- Submit Button -->
+      <div class="w-full pt-4">
+        <Button type="submit" variant="primary" size="medium"> Indsend</Button>
+      </div>
+    </form>
+</div>
+  </div>
+</section>
+
