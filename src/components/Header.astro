@@ -9,7 +9,7 @@ import Logo from "../assets/images/plasticchange.webp";
 <div class="-mt-[5px] px-10">
   <div
     x-data="{ showmenu: false }"
-    class="px-10 py-2 fixed top-0 left-0 z-50 w-full bg-[#fbffff]/50"
+    class="px-10 py-2 fixed top-0 left-0 z-50 w-full bg-[#fbffff]/70"
   >
     <!-- Desktop -->
     <div id="navbar" class="flex flex-row justify-between">
@@ -64,7 +64,7 @@ import Logo from "../assets/images/plasticchange.webp";
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
-          fill="white"
+          fill="black"
           class="size-10"
         >
           <path
@@ -78,31 +78,31 @@ import Logo from "../assets/images/plasticchange.webp";
     <!-- mobile view -->
     <nav
       id="mobilmenu"
-      class="flex flex-col pt-2 w-full md:hidden"
+      class="flex flex-col pt-4 w-full md:hidden"
       x-show="showmenu"
       x-transition
       x-on:click="showmenu = false"
       x-on:click.outside="showmenu = false"
     >
-      <ul class="text-right no-underline pb-2">
-        <li class="pb-2">
+      <ul class="text-right no-underline pb-3">
+        <li class="pb-3">
           <Link
             size="text-mg"
             variant="textlink"
             href="#hvad-er-plastikforurening">Hvad Er Plastikforurening</Link
           >
         </li>
-        <li class="pb-2">
+        <li class="pb-3">
           <Link size="text-mg" variant="textlink" href="/"
             >Problemer Med Plastikforurening</Link
           >
         </li>
-        <li class="pb-2">
+        <li class="pb-3">
           <Link size="text-mg" variant="textlink" href="/"
             >Hvad Kan Du Gøre?</Link
           >
         </li>
-        <li class="pb-2">
+        <li class="pb-3">
           <Link size="text-mg" variant="primary" size="medium" href="/"
             >Støt</Link
           >
