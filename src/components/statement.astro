@@ -38,10 +38,22 @@ import skildpade from "../assets/images/skildpade.webp";
       class="col-start-3 col-span-4 parallaxgrafikstatement3"
     />
   </div>
+
+  <!-- Overlay Text Content -->
+  <div
+    id="stagger3"
+    class="absolute inset-0 flex flex-col justify-center items-center text-center staggeranimation3"
+  >
+    <h1 class=" px-20">
+      Vi samarbejder med internationale organisationer om at skabe en sikker og
+      bedre fremtid for verdenshavene
+    </h1>
+    <h4 class="font-serif mt-4">Vil du være med i det samarbejde?</h4>
+  </div>
 </section>
 <script>
   /* Import af Motion One biblioteket */
-  import { scroll, animate } from "@motionone/dom";
+  import { inView, scroll, animate, stagger } from "@motionone/dom";
 
   /* Parallaxgrafik */
   scroll(
@@ -65,4 +77,14 @@ import skildpade from "../assets/images/skildpade.webp";
       offset: ["start end", "end start"],
     }
   );
+
+  inView("#stagger3 .text-6xl, .text-4xl", () => {
+    animate(
+      ".staggeranimation3 .text-6xl, .text-4xl",
+      { opacity: [0, 1] },
+      {
+        delay: stagger(0.3, { start: 0.2 }),
+      }
+    );
+  });
 </script>
