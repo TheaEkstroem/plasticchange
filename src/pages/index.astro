@@ -33,7 +33,7 @@ import TopTi from "../components/TopTi.astro";
   <section
     id="hvad-er-plastikforurening"
     style="background-color: #F7F7F7"
-    class="flex items-center md:h-screen w-100 bg-cover bg-center sticky"
+    class="flex items-center h-screen w-100 bg-cover bg-center sticky"
   >
     <Plastikforurening />
   </section>
@@ -42,13 +42,13 @@ import TopTi from "../components/TopTi.astro";
   <section
     id=""
     style="background-image: url(/ocean3.webp)"
-    class="flex items-center h-screen w-100 bg-cover bg-center sticky top-0"
+    class="flex items-center h-screen  w-100 bg-cover bg-center sticky top-0"
   >
-    <div class="bg-[#014E82]/60 rounded-lg p-10 mx-auto">
+    <div class="bg-[#014E82]/60 rounded-lg  p-10 mx-auto">
       <h2 class="text-center pb-10">
         Hvor meget skrald i havet der er plastik
       </h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div class="grid grid-cols-2 md:grid-cols-3 md:gap-6 gap-2">
         <div class="flex flex-col items-center">
           <img src="/flaske.svg" alt="flaske" class="w-32 h-32 mb-2" />
           <p>Plastikflasker</p>
@@ -65,9 +65,9 @@ import TopTi from "../components/TopTi.astro";
           <img src="/Pose.svg" alt="flaske" class="w-32 h-32 mb-2" />
           <p>Plastikposer</p>
         </div>
-      </div>
+      
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-5 mt-10">
+      <!--  -->
         <div class="flex flex-col items-center">
           <img
             src="/Sugerør.svg"
@@ -76,10 +76,12 @@ import TopTi from "../components/TopTi.astro";
           />
           <p>Plastiksugerør</p>
         </div>
+        <!--  -->
         <div class="flex flex-col items-center">
           <h2 class="text-center">80%</h2>
           <h3 class="text-center">Plastik kommer fra landbaserede kilder</h3>
         </div>
+        <!--  -->
         <div class="flex flex-col items-center">
           <img
             src="/Chipspose.svg"
@@ -88,7 +90,7 @@ import TopTi from "../components/TopTi.astro";
           />
           <p>Plastikemballage</p>
         </div>
-      </div>
+    
     </div>
   </section>
 
@@ -96,7 +98,7 @@ import TopTi from "../components/TopTi.astro";
   <section
     id="problem"
     style="background-color: #F7F7F7"
-    class="flex items-center h-screen w-100 bg-cover bg-center sticky"
+    class="flex items-center md:h-[100vh] h-[110vh] w-100 bg-cover bg-center sticky"
   >
     <ProblemPlastik />
   </section>
@@ -104,7 +106,7 @@ import TopTi from "../components/TopTi.astro";
   <!-- datavisual + info -->
   <section
     style="background-image: url(/ocean2.webp)"
-    class="grid items-center h-[200vh] w-100 bg-cover bg-center sticky"
+    class="grid items-center md:h-[200vh]  w-100 bg-cover bg-center sticky"
   >
     <!-- Datavisualisering  -->
 
