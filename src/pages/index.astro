@@ -3,7 +3,6 @@ import MainLayout from "../layouts/MainLayout.astro";
 import Button from "../components/Button.astro";
 import Link from "../components/Link.astro";
 import { Image } from "astro:assets";
-import thumbsup from "../assets/images/thumbsup.png";
 import Plastikforurening from "../components/Plastikforurening.astro";
 import Datavisualisering from "../components/Datavisualisering.astro";
 import Nyhedsbrev from "../components/nyhedsbrev.astro";
@@ -14,6 +13,11 @@ import statement from "../components/statement.astro";
 import Statement from "../components/statement.astro";
 import Procent from "../components/Procent.astro";
 import TopTi from "../components/TopTi.astro";
+
+
+import plastikpose from "../assets/images/plastikpose.webp";
+import skildpade from "../assets/images/skildpade.webp";
+
 ---
 
 <MainLayout title="Singleusesucks">
@@ -285,11 +289,65 @@ import TopTi from "../components/TopTi.astro";
   </div>
 
   <!-- statement  -->
+     <!-- style="background-color: #F7F7F7" -->
   <section
-    style="background-color: #F7F7F7"
+
     class="h-[100vh] w-100 bg-cover bg-center sticky"
   >
-    <Statement />
+
+  <section
+  class="parallaxgrafikstatement fullwidthsection relative"
+  style="background-color:#4b7f8b"
+>
+  <div class="w-full grid grid-cols-9 overflow-hidden h-screen">
+    <Image loading="lazy"
+      src={plastikpose}
+      alt="plastikpose"
+      class="col-start-5 col-span-2 parallaxgrafikstatement1"
+    />
+
+    <Image loading="lazy"
+      src={skildpade}
+      alt="skildpade"
+      class="col-start-5 col-span-2 parallaxgrafikstatement1"
+    />
+
+    <Image loading="lazy"
+      src={skildpade}
+      alt="skildpade"
+      class="col-start-5 col-span-2 parallaxgrafikstatement2"
+    />
+    <Image loading="lazy"
+      src={plastikpose}
+      alt="plastikpose"
+      class="col-start-5 col-span-3 parallaxgrafikstatement2"
+    />
+
+    <Image loading="lazy"
+      src={plastikpose}
+      alt="plastikpose"
+      class="col-start-3 col-span-4 parallaxgrafikstatement3"
+    />
+  </div>
+
+  <!-- Overlay Text Content -->
+  <div
+    id="stagger3"
+    class="absolute inset-0 flex flex-col justify-center items-center text-center staggeranimation3"
+  >
+    <h1 class=" px-20">
+      Vi samarbejder med internationale organisationer om at skabe en sikker og
+      bedre fremtid for verdenshavene
+    </h1>
+    <h4 class="font-serif mt-4">Vil du være med i det samarbejde?</h4>
+  </div>
+</section>
+
+
+
+
+
+   <!--  <Statement /> -->
   </section>
 
   <!-- Donér  -->
@@ -335,6 +393,42 @@ import TopTi from "../components/TopTi.astro";
 
   
 
+
+/* statement */
+
+
+/* Parallaxgrafik */
+scroll(
+  animate(".parallaxgrafikstatement1", { x: [-200, 1000], y: [-200, 100] }),
+  {
+    target: document.querySelector(".parallaxgrafikstatement"),
+    offset: ["start end", "end start"],
+  }
+);
+scroll(
+  animate(".parallaxgrafikstatement2", { x: [-1000, 400], y: [-2000, 100] }),
+  {
+    target: document.querySelector(".parallaxgrafikstatement"),
+    offset: ["start end", "end start"],
+  }
+);
+scroll(
+  animate(".parallaxgrafikstatement3", { x: [-1000, 200], y: [-4000, 100] }),
+  {
+    target: document.querySelector(".parallaxgrafikstatement"),
+    offset: ["start end", "end start"],
+  }
+);
+
+inView("#stagger3 .text-6xl, .text-4xl", () => {
+  animate(
+    ".staggeranimation3 .text-6xl, .text-4xl",
+    { opacity: [0, 1] },
+    {
+      delay: stagger(0.3, { start: 0.2 }),
+    }
+  );
+});
 
 
 
