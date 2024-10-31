@@ -97,10 +97,30 @@
   </div>
 </section>
 
-<script>
+
+
+<script >
   import { inView, animate, stagger } from "@motionone/dom";
 
+<<<<<<< HEAD
   inView("#stagger2 .animation", () => {
+=======
+    inView("#stagger2 .animation", () => {
+      animate(
+        ".staggeranimation2 .animation",
+        { opacity: [0, 1] },
+        {
+          delay: stagger(0.3, { start: 0.1 }),
+        }
+      );
+    });
+</script>
+
+<!-- <script>
+ import { inView, animate, stagger } from "@motionone/dom";
+
+  inView("#stagger2 .flex", () => {
+>>>>>>> billeder
     animate(
       ".staggeranimation2 .animation",
       { opacity: [0, 1] },
@@ -109,7 +129,7 @@
       }
     );
   });
-</script>
+</script> -->
 
 <style>
   p,
