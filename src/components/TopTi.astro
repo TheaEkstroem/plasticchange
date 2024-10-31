@@ -2,7 +2,11 @@
 
 ---
 
-<section class="flex flex-col items-center justify-center min-h-screen ">
+
+
+
+
+<section class="flex flex-col items-center justify-center min-h-screen relative">
   <div class="bg-[#000D36]/50 md:p-20 p-10 rounded-lg pt-4 mt-1 md:-mt-52">
     <div>
       <h2>Top 10</h2>
@@ -11,9 +15,9 @@
 
     <div
       id="stagger2"
-      class="grid md:grid-cols-5 grid-cols-2 gap-8 mt-10 place-items-center staggeranimation2"
+      class="staggeranimation2 grid md:grid-cols-5 grid-cols-2 gap-8 mt-10 place-items-center "
     >
-      <div class="flex flex-col items-center">
+      <div class="animation flex flex-col items-center">
         <img
         loading="lazy"
           class="h-auto max-w-12 pb-6"
@@ -24,19 +28,19 @@
         <p class="text-3xl">2,412,151</p>
       </div>
 
-      <div class="flex flex-col items-center mt-10">
+      <div class="animation flex flex-col items-center mt-10">
         <img loading="lazy" class="h-auto max-w-20 pb-6" src="/Slik.svg" alt="Slik" />
         <h3 class="text-lg">2. Madindpakning</h3>
         <p class="text-3xl">1,739,743</p>
       </div>
 
-      <div class="flex flex-col items-center mt-6">
+      <div class="animation flex flex-col items-center mt-6">
         <img loading="lazy" class="h-auto max-w-20 pb-6" src="/flaske.svg" alt="flaske" />
         <h5 class="">3. Plastikflasker</h5>
         <p class="text-3xl">1,569,135</p>
       </div>
 
-      <div class="flex flex-col items-center mt-10">
+      <div class="animation flex flex-col items-center mt-10">
         <img loading="lazy"
           class="h-auto max-w-16 pb-6"
           src="/Plastikpropper.svg"
@@ -46,13 +50,13 @@
         <p class="text-3xl">1,091,107</p>
       </div>
 
-      <div class="flex flex-col items-center">
+      <div class="animation flex flex-col items-center">
         <img loading="lazy" class="h-auto max-w-16 pb-6" src="/Pose.svg" alt="Pose" />
         <h5 class="">5. Plastik indkøbsposer</h5>
         <p class="text-3xl">757,523</p>
       </div>
 
-      <div class="flex flex-col items-center mt-10">
+      <div class="animation flex flex-col items-center mt-10">
         <img loading="lazy"
           class="h-auto max-w-16 pb-6"
           src="/Chipspose.svg"
@@ -62,13 +66,13 @@
         <p class="text-3xl">746,211</p>
       </div>
 
-      <div class="flex flex-col items-center -top-4">
+      <div class="animation flex flex-col items-center -top-4">
         <img loading="lazy" class="h-auto max-w-16 pb-6" src="/Sugerør.svg" alt="Sugerør" />
         <h5 class="">7. Sugerør</h5>
         <p class="text-3xl">643,562</p>
       </div>
 
-      <div class="flex flex-col items-center mt-16">
+      <div class="animation flex flex-col items-center mt-16">
         <img loading="lazy"
           class="h-auto max-w-16 pb-6"
           src="/BeholdeTA.svg"
@@ -78,13 +82,13 @@
         <p class="text-3xl">632,874</p>
       </div>
 
-      <div class="flex flex-col items-center mt-16">
+      <div class="animation flex flex-col items-center mt-16">
         <img loading="lazy" class="h-auto max-w-16 pb-6" src="/Lids.svg" alt="Låg" />
         <h5 class="">9. Plastiklåg</h5>
         <p class="text-3xl">624,878</p>
       </div>
 
-      <div class="flex flex-col items-center mt-10">
+      <div class="animation flex flex-col items-center mt-10">
         <img loading="lazy" class="h-auto max-w-16 pb-6" src="/TakeAway.svg" alt="TakeAway" />
         <h5 class="">10. Skum take away beholdere</h5>
         <p class="text-3xl">580,570</p>
@@ -96,9 +100,9 @@
 <script>
   import { inView, animate, stagger } from "@motionone/dom";
 
-  inView("#stagger2 .flex", () => {
+  inView("#stagger2 .animation", () => {
     animate(
-      ".staggeranimation2 .flex",
+      ".staggeranimation2 .animation",
       { opacity: [0, 1] },
       {
         delay: stagger(0.3, { start: 0.1 }),
