@@ -45,13 +45,13 @@ import TopTi from "../components/TopTi.astro";
     class="flex items-center h-screen  w-100 bg-cover bg-center sticky top-0"
   >
     <div class="bg-[#014E82]/60 rounded-lg  p-10 mx-auto">
-      <h2 class="text-center pb-10">
+      <h2 class="text-center pb-10 text-white">
         Hvor meget skrald i havet der er plastik
       </h2>
       <div class="grid grid-cols-2 md:grid-cols-3 md:gap-6 gap-2">
         <div class="flex flex-col items-center">
           <img loading="lazy" src="/flaske.svg" alt="flaske" class="w-32 h-32 mb-2" />
-          <p>Plastikflasker</p>
+          <p class="text-white">Plastikflasker</p>
         </div>
         <div class="flex flex-col items-center">
           <img loading="lazy"
@@ -59,11 +59,11 @@ import TopTi from "../components/TopTi.astro";
             alt="flaske"
             class="w-32 h-32 mb-2"
           />
-          <p>Plastikbeholder</p>
+          <p class="text-white">Plastikbeholder</p>
         </div>
         <div class="flex flex-col items-center">
           <img  loading="lazy" src="/Pose.svg" alt="flaske" class="w-32 h-32 mb-2" />
-          <p>Plastikposer</p>
+          <p class="text-white">Plastikposer</p>
         </div>
       
 
@@ -74,12 +74,12 @@ import TopTi from "../components/TopTi.astro";
             alt="sugerør"
             class="w-32 h-32 mb-2"
           />
-          <p>Plastiksugerør</p>
+          <p class="text-white">Plastiksugerør</p>
         </div>
         <!--  -->
         <div class="flex flex-col items-center">
-          <h2 class="text-center">80%</h2>
-          <h3 class="text-center">Plastik kommer fra landbaserede kilder</h3>
+          <h2 class="text-center text-white">80%</h2>
+          <h3 class="text-center text-white">Plastik kommer fra landbaserede kilder</h3>
         </div>
         <!--  -->
         <div class="flex flex-col items-center">
@@ -88,7 +88,7 @@ import TopTi from "../components/TopTi.astro";
             alt="chipspose"
             class="w-32 h-32 mb-2"
           />
-          <p>Plastikemballage</p>
+          <p class="text-white">Plastikemballage</p>
         </div>
     
     </div>
@@ -112,14 +112,14 @@ import TopTi from "../components/TopTi.astro";
 
     <Datavisualisering />    
 
-<!--   <TopTi />  -->
+    <!-- Top ti infografik  -->
 
 
   <section class="flex flex-col items-center justify-center min-h-screen relative">
     <div class="bg-[#000D36]/50 md:p-20 p-10 rounded-lg pt-4 mt-1 md:-mt-52">
       <div>
-        <h2>Top 10</h2>
-        <h2>indsamlede genstande i havet</h2>
+        <h2 class="text-white">Top 10</h2>
+        <h2 class="text-white">indsamlede genstande i havet</h2>
       </div>
   
       <div
@@ -134,19 +134,19 @@ import TopTi from "../components/TopTi.astro";
             alt="Cigaretter"
           />
           <h5 class="">1. Cigaretskodder</h5>
-          <p class="text-3xl">2,412,151</p>
+          <p class="text-3xl text-white">2,412,151</p>
         </div>
   
         <div class="animation flex flex-col items-center mt-10">
           <img loading="lazy" class="h-auto max-w-20 pb-6" src="/Slik.svg" alt="Slik" />
-          <h3 class="text-lg">2. Madindpakning</h3>
-          <p class="text-3xl">1,739,743</p>
+          <h5 class="text-lg">2. Madindpakning</h5>
+          <p class="text-3xl text-white  ">1,739,743</p>
         </div>
   
         <div class="animation flex flex-col items-center mt-6">
           <img loading="lazy" class="h-auto max-w-20 pb-6" src="/flaske.svg" alt="flaske" />
           <h5 class="">3. Plastikflasker</h5>
-          <p class="text-3xl">1,569,135</p>
+          <p class="text-3xl text-white">1,569,135</p>
         </div>
   
         <div class="animation flex flex-col items-center mt-10">
@@ -156,13 +156,13 @@ import TopTi from "../components/TopTi.astro";
             alt="propper"
           />
           <h5 class="">4. Plastikpropper</h5>
-          <p class="text-3xl">1,091,107</p>
+          <p class="text-3xl text-white">1,091,107</p>
         </div>
   
         <div class="animation flex flex-col items-center">
           <img loading="lazy" class="h-auto max-w-16 pb-6" src="/Pose.svg" alt="Pose" />
           <h5 class="">5. Plastik indkøbsposer</h5>
-          <p class="text-3xl">757,523</p>
+          <p class="text-3x. text-white">757,523</p>
         </div>
   
         <div class="animation flex flex-col items-center mt-10">
@@ -172,13 +172,13 @@ import TopTi from "../components/TopTi.astro";
             alt="Plastikpose"
           />
           <h5 class="">6. Andre plastikposer</h5>
-          <p class="text-3xl">746,211</p>
+          <p class="text-3xl text-white">746,211</p>
         </div>
   
         <div class="animation flex flex-col items-center -top-4">
           <img loading="lazy" class="h-auto max-w-16 pb-6" src="/Sugerør.svg" alt="Sugerør" />
           <h5 class="">7. Sugerør</h5>
-          <p class="text-3xl">643,562</p>
+          <p class="text-3xl text-white">643,562</p>
         </div>
   
         <div class="animation flex flex-col items-center mt-16">
@@ -188,44 +188,29 @@ import TopTi from "../components/TopTi.astro";
             alt="TABeholder"
           />
           <h5 class="">8. Plastik take away beholder</h5>
-          <p class="text-3xl">632,874</p>
+          <p class="text-3xl text-white">632,874</p>
         </div>
   
         <div class="animation flex flex-col items-center mt-16">
           <img loading="lazy" class="h-auto max-w-16 pb-6" src="/Lids.svg" alt="Låg" />
           <h5 class="">9. Plastiklåg</h5>
-          <p class="text-3xl">624,878</p>
+          <p class="text-3xl text-white">624,878</p>
         </div>
   
         <div class="animation flex flex-col items-center mt-10">
           <img loading="lazy" class="h-auto max-w-16 pb-6" src="/TakeAway.svg" alt="TakeAway" />
           <h5 class="">10. Skum take away beholdere</h5>
-          <p class="text-3xl">580,570</p>
+          <p class="text-3xl text-white">580,570</p>
         </div>
       </div>
     </div>
   </section>
   
-  
-  
-  <script >
-    import { inView, animate, stagger } from "@motionone/dom";
-    
-      inView("#stagger2 .animation", () => {
-        animate(
-          ".staggeranimation2 .animation",
-          { opacity: [0, 1] },
-          {
-            delay: stagger(0.3, { start: 0.1 }),
-          }
-        );
-      });
-  </script>
-  
-
-  
-
     <!-- Top ti infografik  -->
+  
+
+
+
   </section>
 
   <!-- infografik, goderåd -->
@@ -246,7 +231,7 @@ import TopTi from "../components/TopTi.astro";
         >
           <div>
             <h3>Dit indkøb</h3>
-            <h4>Tag en mulepose med, og sig nej tak til plastik poser</h4>
+            <h4 >Tag en mulepose med, og sig nej tak til plastik poser</h4>
           </div>
           <img loading="lazy"
             src="/Pose.svg"
@@ -327,7 +312,7 @@ import TopTi from "../components/TopTi.astro";
 </MainLayout>
 
 <script>
-  import { scroll, animate, inView } from "@motionone/dom";
+  import { scroll, animate, inView, stagger } from "@motionone/dom";
 
   scroll(
     animate("#horisontalliste1", {
@@ -335,4 +320,22 @@ import TopTi from "../components/TopTi.astro";
     }),
     { target: document.querySelector("#horisontalscrollsection1") }
   );
+
+
+/* stagger top 10 */    
+      inView("#stagger2 .animation", () => {
+        animate(
+          ".staggeranimation2 .animation",
+          { opacity: [0, 1] },
+          {
+            delay: stagger(0.3, { start: 0.1 }),
+          }
+        );
+      });
+
+  
+
+
+
+
 </script>
