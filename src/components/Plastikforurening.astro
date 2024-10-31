@@ -16,10 +16,15 @@ import skildpade from "../assets/images/skildpade.webp";
   <div
     class="mt-2 lg:h-screen w-full bg-cover bg-center grid grid-cols-10 grid-flow-col overflow-hidden"
   >
+  <Image
+  src={plastikpose}
+  alt="plastikpose"
+  class="md:col-start-2 md:col-span-2 parallaxgrafik1 col-start-1 col-span-4 "
+/>
     <Image
       src={plastikpose}
       alt="plastikpose"
-      class="col-start-6 col-span-2 parallaxgrafik2"
+      class="md:col-start-6 md:col-span-2 parallaxgrafik2 col-start-2 col-span-3"
     />
     <Image
       src={fisk2}
@@ -29,8 +34,13 @@ import skildpade from "../assets/images/skildpade.webp";
     <Image
       src={fisk1}
       alt="fisk"
-      class="col-start-1 col-span-2 parallaxgrafik4"
+      class="col-start-1 col-span-1 parallaxgrafik4"
     />
+    <Image
+    src={plastikpose}
+    alt="plastikpose"
+    class="col-start-7 col-span-2 parallaxgrafik5"
+  />
     <Image
       src={plastikpose}
       alt="plastikpose"
@@ -70,7 +80,10 @@ import skildpade from "../assets/images/skildpade.webp";
   import { scroll, animate } from "@motionone/dom";
 
   /* 1 */
-
+  scroll(animate(".parallaxgrafik1", { x: [-1700, 1800], y: [200, 0] }), {
+    target: document.querySelector(".parallaxgrafik"),
+    offset: ["start end", "end start"],
+  });
   scroll(animate(".parallaxgrafik2", { x: [-1500, 2000], y: [200, 0] }), {
     target: document.querySelector(".parallaxgrafik"),
     offset: ["start end", "end start"],
@@ -81,32 +94,20 @@ import skildpade from "../assets/images/skildpade.webp";
   });
 
   /* 2 */
-
-  scroll(animate(".parallaxgrafik4", { x: [2000, -1700], y: [100, 0] }), {
+  scroll(animate(".parallaxgrafik4", { x: [2000, -1700], y: [130, 0] }), {
     target: document.querySelector(".parallaxgrafik"),
     offset: ["start end", "end start"],
   });
-
+  scroll(animate(".parallaxgrafik5", { x: [2000, -1400], y: [130, 0] }), {
+    target: document.querySelector(".parallaxgrafik"),
+    offset: ["start end", "end start"],
+  });
   scroll(animate(".parallaxgrafik6", { x: [1600, -1800], y: [150, 0] }), {
     target: document.querySelector(".parallaxgrafik"),
     offset: ["start end", "end start"],
   });
-  scroll(animate(".parallaxgrafik7", { x: [1800, -800], y: [150, 0] }), {
+  scroll(animate(".parallaxgrafik7", { x: [1800, -600], y: [0, 0] }), {
     target: document.querySelector(".parallaxgrafik"),
     offset: ["start end", "end start"],
   });
 </script>
-<!--       <Image src={grønflaske} alt="grønflaske" class="col-start-1 col-span-2 parallaxgrafik5" />
-
-	scroll(animate(".parallaxgrafik5", {  x: [1900, -1800], y: [100, 0] }), {
-		target: document.querySelector(".parallaxgrafik"), offset: ["start end", "end start"]
-	});
-
-
-             <Image src={grønflaske} alt="grønflaske" class="col-start-3 col-span-1  parallaxgrafik1" />
-
-                 scroll(animate(".parallaxgrafik1", {  x: [-1500, 2000], y: [100, 0] }), {
-		target: document.querySelector(".parallaxgrafik"), offset: ["start end", "end start"]
-	});
-
- -->
