@@ -16,48 +16,43 @@ import skildpade from "../assets/images/skildpade.webp";
   <div
     class="mt-2 h-screen w-full bg-cover bg-center grid grid-cols-10 grid-flow-col overflow-hidden"
   >
-<<<<<<< HEAD
   <Image
   src={plastikpose}
   alt="plastikpose"
   class="md:col-start-2 md:col-span-2 parallaxgrafik1 col-start-1 col-span-4 "
 />
-    <Image
-=======
+  
     <Image loading="lazy"
->>>>>>> main
       src={plastikpose}
       alt="plastikpose"
-      class="md:col-start-6 md:col-span-2 parallaxgrafik2 col-start-2 col-span-3"
+      class="md:col-start-6 md:col-span-2 parallaxgrafik2 col-start-4 col-span-3"
     />
     <Image loading="lazy"
       src={fisk2}
       alt="fisk"
-      class="col-start-8 col-span-1 parallaxgrafik3"
+      class="md:col-start-5 md:col-span-1 parallaxgrafik3 hidden md:block"
     />
     <Image loading="lazy"
       src={fisk1}
       alt="fisk"
-      class="col-start-1 col-span-1 parallaxgrafik4"
+      class="md:col-start-1 md:col-span-1 parallaxgrafik4 col-start-2 col-span-2"
     />
-<<<<<<< HEAD
+
     <Image
     src={plastikpose}
     alt="plastikpose"
-    class="col-start-7 col-span-2 parallaxgrafik5"
+    class="md:col-start-7 md:col-span-2 parallaxgrafik5 col-start-6 col-span-3 "
   />
-    <Image
-=======
+
     <Image loading="lazy"
->>>>>>> main
       src={plastikpose}
       alt="plastikpose"
-      class="col-start-5 col-span-1 parallaxgrafik6"
+      class="col-start-5 col-span-1 parallaxgrafik6 hidden md:block"
     />
     <Image loading="lazy"
       src={skildpade}
       alt="skildpade"
-      class="col-start-4 col-span-2 parallaxgrafik7"
+      class="md:col-start-4 md:col-span-2 parallaxgrafik7 col-start-7 col-span-2"
     />
   </div>
 
@@ -102,15 +97,13 @@ import skildpade from "../assets/images/skildpade.webp";
   });
 
   /* 2 */
-<<<<<<< HEAD
+
   scroll(animate(".parallaxgrafik4", { x: [2000, -1700], y: [130, 0] }), {
     target: document.querySelector(".parallaxgrafik"),
     offset: ["start end", "end start"],
   });
-  scroll(animate(".parallaxgrafik5", { x: [2000, -1400], y: [130, 0] }), {
-=======
-  scroll(animate(".parallaxgrafik4", { x: [2000, -1700], y: [100, 0] }), {
->>>>>>> main
+
+  scroll(animate(".parallaxgrafik5", { x: [2000, -1700], y: [100, 0] }), {
     target: document.querySelector(".parallaxgrafik"),
     offset: ["start end", "end start"],
   });
