@@ -14,39 +14,47 @@ import skildpade from "../assets/images/skildpade.webp";
 >
   <!-- Parallax background and animated images -->
   <div
-    class="mt-2 lg:h-screen w-full bg-cover bg-center grid grid-cols-10 grid-flow-col overflow-hidden"
+    class="mt-2 h-screen w-full bg-cover bg-center grid grid-cols-10 grid-flow-col overflow-hidden"
   >
+<<<<<<< HEAD
   <Image
   src={plastikpose}
   alt="plastikpose"
   class="md:col-start-2 md:col-span-2 parallaxgrafik1 col-start-1 col-span-4 "
 />
     <Image
+=======
+    <Image loading="lazy"
+>>>>>>> main
       src={plastikpose}
       alt="plastikpose"
       class="md:col-start-6 md:col-span-2 parallaxgrafik2 col-start-2 col-span-3"
     />
-    <Image
+    <Image loading="lazy"
       src={fisk2}
       alt="fisk"
       class="col-start-8 col-span-1 parallaxgrafik3"
     />
-    <Image
+    <Image loading="lazy"
       src={fisk1}
       alt="fisk"
       class="col-start-1 col-span-1 parallaxgrafik4"
     />
+<<<<<<< HEAD
     <Image
     src={plastikpose}
     alt="plastikpose"
     class="col-start-7 col-span-2 parallaxgrafik5"
   />
     <Image
+=======
+    <Image loading="lazy"
+>>>>>>> main
       src={plastikpose}
       alt="plastikpose"
       class="col-start-5 col-span-1 parallaxgrafik6"
     />
-    <Image
+    <Image loading="lazy"
       src={skildpade}
       alt="skildpade"
       class="col-start-4 col-span-2 parallaxgrafik7"
@@ -54,18 +62,18 @@ import skildpade from "../assets/images/skildpade.webp";
   </div>
 
   <!-- Overlay Text Content -->
-  <div class="mt-24 p-10 absolute inset-0 text-left grid grid-cols-2">
-    <div class="ml-20 mr-20 mt-16">
+  <div class="md:mt-24 mt-8 p-10 absolute inset-0 text-left">
+    <div class="md:ml-20 md:mr-20 md:mt-16 mt-8">
       <h3 class="mb-4">Hvad er plastikforurening</h3>
       <div class="prose">
-        <p class="max-w-lg">
+        <p class="md:max-w-lg max-w-sm">
           Plastikforurening er ophobning af plastik i naturen, hvor det ikke
           nedbrydes naturligt. Det findes især i havet, hvor det skader dyr, der
           forveksler det med mad eller vikles ind i det. Over tid nedbrydes
           plastik til mikroplast, små stykker under 5 mm, som spreder farlige
           kemikalier.
         </p>
-        <p class="max-w-lg">
+        <p class="md:max-w-lg max-w-sm">
           Disse kemikalier kan skade både dyr og mennesker, når de kommer ind i
           fødekæden gennem f.eks. fisk og skaldyr. Plastikforurening påvirker
           også miljøet ved at blokere vandløb og forringe landskaber, både på
@@ -94,11 +102,15 @@ import skildpade from "../assets/images/skildpade.webp";
   });
 
   /* 2 */
+<<<<<<< HEAD
   scroll(animate(".parallaxgrafik4", { x: [2000, -1700], y: [130, 0] }), {
     target: document.querySelector(".parallaxgrafik"),
     offset: ["start end", "end start"],
   });
   scroll(animate(".parallaxgrafik5", { x: [2000, -1400], y: [130, 0] }), {
+=======
+  scroll(animate(".parallaxgrafik4", { x: [2000, -1700], y: [100, 0] }), {
+>>>>>>> main
     target: document.querySelector(".parallaxgrafik"),
     offset: ["start end", "end start"],
   });

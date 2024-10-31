@@ -19,13 +19,13 @@ import TopTi from "../components/TopTi.astro";
 <MainLayout title="Singleusesucks">
   <!-- Hero -->
   <section 
-    style="background-image: url(/src/assets/images/ocean1.webp)"
+    style="background-image: url(/ocean1.webp)"
     class="flex items-center h-screen w-100 bg-cover bg-center sticky top-0"
   >
     <div class="flex flex-col items-center justify-center mx-auto">
-      <h1>Det er sejt at bruge plastik flere gange</h1>
+      <h1 class="text-center pb-3">Det er sejt at bruge plastik flere gange</h1>
       <h2 class="font-serif">#SingleUseSucks</h2>
-      <Link variant="primary" size="large">Støt</Link>
+      <Link variant="primary" size="large" href="#Støt">Støt</Link>
     </div>
   </section>
 
@@ -41,70 +41,72 @@ import TopTi from "../components/TopTi.astro";
   <!-- Procent infografik med plastikforurening -->
   <section
     id=""
-    style="background-image: url(/src/assets/images/ocean2.webp)"
-    class="flex items-center h-screen w-100 bg-cover bg-center sticky top-0"
+    style="background-image: url(/ocean3.webp)"
+    class="flex items-center h-screen  w-100 bg-cover bg-center sticky top-0"
   >
-    <div class="bg-[#014E82]/60 rounded-lg p-10 mx-auto">
+    <div class="bg-[#014E82]/60 rounded-lg  p-10 mx-auto">
       <h2 class="text-center pb-10">
         Hvor meget skrald i havet der er plastik
       </h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div class="grid grid-cols-2 md:grid-cols-3 md:gap-6 gap-2">
         <div class="flex flex-col items-center">
-          <img src="../public/flaske.svg" alt="flaske" class="w-32 h-32 mb-2" />
+          <img loading="lazy" src="/flaske.svg" alt="flaske" class="w-32 h-32 mb-2" />
           <p>Plastikflasker</p>
         </div>
         <div class="flex flex-col items-center">
-          <img
-            src="../public/Beholder.svg"
+          <img loading="lazy"
+            src="/Beholder.svg"
             alt="flaske"
             class="w-32 h-32 mb-2"
           />
           <p>Plastikbeholder</p>
         </div>
         <div class="flex flex-col items-center">
-          <img src="../public/Pose.svg" alt="flaske" class="w-32 h-32 mb-2" />
+          <img  loading="lazy" src="/Pose.svg" alt="flaske" class="w-32 h-32 mb-2" />
           <p>Plastikposer</p>
         </div>
-      </div>
+      
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-5 mt-10">
+      <!--  -->
         <div class="flex flex-col items-center">
-          <img
-            src="../public/Sugerør.svg"
+          <img loading="lazy"
+            src="/Sugerør.svg"
             alt="sugerør"
             class="w-32 h-32 mb-2"
           />
           <p>Plastiksugerør</p>
         </div>
+        <!--  -->
         <div class="flex flex-col items-center">
           <h2 class="text-center">80%</h2>
           <h3 class="text-center">Plastik kommer fra landbaserede kilder</h3>
         </div>
+        <!--  -->
         <div class="flex flex-col items-center">
-          <img
-            src="../public/Chipspose.svg"
+          <img loading="lazy"
+            src="/Chipspose.svg"
             alt="chipspose"
             class="w-32 h-32 mb-2"
           />
           <p>Plastikemballage</p>
         </div>
-      </div>
+    
     </div>
   </section>
 
   <!-- Problemet med plastikforurening -->
   <section
-    id="plastikforurening"
+    id="problem"
     style="background-color: #F7F7F7"
-    class="flex items-center h-screen w-100 bg-cover bg-center sticky top-0"
+    class="flex items-center md:h-[100vh] h-[110vh] w-100 bg-cover bg-center sticky"
   >
     <ProblemPlastik />
   </section>
 
   <!-- datavisual + info -->
   <section
-    style="background-image: url(/src/assets/images/ocean2.webp)"
-    class="grid items-center h-[200vh] w-100 bg-cover bg-center sticky"
+    style="background-image: url(/ocean2.webp)"
+    class="grid items-center md:h-[200vh]  w-100 bg-cover bg-center sticky"
   >
     <!-- Datavisualisering  -->
 
@@ -135,8 +137,8 @@ import TopTi from "../components/TopTi.astro";
             <h3>Dit indkøb</h3>
             <h4>Tag en mulepose med, og sig nej tak til plastik poser</h4>
           </div>
-          <img
-            src="../public/Pose.svg"
+          <img loading="lazy"
+            src="/Pose.svg"
             alt="Plastikpose"
             class="w-32 h-32 mb-2"
           />
@@ -150,7 +152,7 @@ import TopTi from "../components/TopTi.astro";
             <h3>Din vandflaske</h3>
             <h4>Brug drikkedunk og undgå købevand</h4>
           </div>
-          <img src="../public/flaske.svg" alt="flaske" class="w-32 h-32 mb-2" />
+          <img loading="lazy" src="/flaske.svg" alt="flaske" class="w-32 h-32 mb-2" />
         </div>
         <!--  -->
         <div
@@ -161,8 +163,8 @@ import TopTi from "../components/TopTi.astro";
             <h3>Din tøjvask</h3>
             <h4>Fyld din vaskemaskine, når du skal vaske tøj</h4>
           </div>
-          <img
-            src="../public/Beholder.svg"
+          <img loading="lazy"
+            src="/Beholder.svg"
             alt="Plastbeholder"
             class="w-32 h-32 mb-2"
           />
@@ -176,8 +178,8 @@ import TopTi from "../components/TopTi.astro";
             <h3>Din fest</h3>
             <h4>Drop engangsservice, balloner og sugerør</h4>
           </div>
-          <img
-            src="../public/Sugerør.svg"
+          <img loading="lazy"
+            src="/Sugerør.svg"
             alt="sugerør"
             class="w-32 h-32 mb-2"
           />
@@ -197,7 +199,7 @@ import TopTi from "../components/TopTi.astro";
   <!-- Donér  -->
   <section
     id="Støt"
-    style="background-image: url(/src/assets/images/ocean1.webp)"
+    style="background-image: url(/ocean1.webp)"
     class="flex items-center h-screen w-100 bg-cover bg-center sticky mx-auto"
   >
     <Doner />
